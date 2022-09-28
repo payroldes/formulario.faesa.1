@@ -1,0 +1,87 @@
+  <!DOCTYPE html>
+  <html lang="pt-br">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="styles.css" />
+      <link rel="php" href="aula/" />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
+        rel="stylesheet"
+      />
+      <title>Formulário Faesa</title>
+    </head>
+
+    <body>
+      <header>
+        <a
+          href="https://ead.faesa.br/cursos-graduacao?utm_feeditemid=&utm_device=c&utm_term=faesa&utm_source=google&utm_medium=ppc&utm_campaign=%5BS%5D+I_Marca&hsa_cam=17935051098&hsa_grp=148214440028&hsa_mt=e&hsa_src=g&hsa_ad=614517703109&hsa_acc=7414498701&hsa_net=adwords&hsa_kw=faesa&hsa_tgt=kwd-3168498073&hsa_ver=3&gclid=CjwKCAjwm8WZBhBUEiwA178UnKmwpTpOZ5nd3E1m6FH9LufPlEMy38aolFiXCjE6sTP9vg4GpHgX9BoCJMEQAvD_BwE"
+          target="_blank"
+          ><img class="imagem" src="assets/logofaesa.jpg" alt="faesa_logo"
+        /></a>
+        <h4>Seja Bem vindo</h4>
+      </header>
+
+      <main>
+        <section class="container">
+          <div class="principal">
+            <h3>Insira seus Dados</h3>
+          </div>
+
+          <form id="form" class="form" method="POST" action="processa.php">
+            <div class="form-control">
+              <label for="username">Nome</label>
+              <input type="text" id="username" placeholder="Digite seu nome" />
+              <i class="fa-regular fa-exclamation"></i>
+              <i class="fa-solid fa-check"></i>
+              <small>O nome é obrigatório</small>
+            </div>
+
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input type="text" id="email" placeholder="Digite seu email" />
+              <i class="fa-regular fa-exclamation"></i>
+              <i class="fa-solid fa-check"></i>
+              <small>Por favor insira um email válido</small>
+            </div>
+
+            <div class="form-control">
+              <label for="number">Telefone</label>
+              <input
+                type="text"
+                id="number"
+                placeholder="Digite seu telefone"
+                maxlenght="12"
+              />
+              <i class="fa-regular fa-exclamation"></i>
+              <i class="fa-solid fa-check"></i>
+              <small>Por favor insira um número de telefone válido</small>
+            </div>
+
+            <div class="form-control">
+              <label for="message">Mensagem</label>
+              <input
+                type="text"
+                id="message"
+                placeholder="Digite sua mensagem"
+                maxlenght="10"
+              />
+              <i class="fa-regular fa-exclamation"></i>
+              <i class="fa-solid fa-check"></i>
+              <small>A mensagem é obrigatória, pelo menos 10 caracteres</small>
+            </div>
+
+            <button type="submit">Enviar</button>
+          </form>
+        </section>
+      </main>
+
+      <script
+        src="https://kit.fontawesome.com/2a5d1edc12.js"
+        crossorigin="anonymous"
+      ></script>
+
+      <script src="./script.js"></script>
+    </body>
+  </html>
+</php>
